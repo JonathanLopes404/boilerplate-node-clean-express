@@ -6,8 +6,18 @@
         "esModuleInterop": true,
         "allowJs": true,
         "strictNullChecks": true,
-        "sourceMap": true
+        "sourceMap": true,
+        "paths": {
+            "@src/*": ["./src/*"],
+            "@main/*": ["./src/main/*"],
+            "@config/*": ["./src/main/config/*"],
+            "@presentation/*": ["./src/presentation/*"],
+            "@infra/*": ["./src/infra/*"],
+            "@data/*": ["./src/data/*"],
+            "@domain/*": ["./src/domain/*"],
+            "@controllers/*": ["./src/presentation/controllers/*"],
+        }
     },
-    "include": ["src"],
+    "include": ["src", "tests"],
     "exclude": ["**/node_modules", "**/.*/"]
   }
